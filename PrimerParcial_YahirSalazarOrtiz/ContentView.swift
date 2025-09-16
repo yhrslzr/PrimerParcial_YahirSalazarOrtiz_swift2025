@@ -9,8 +9,9 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        VStack {
-            Text("Tarjetas de crédito").font(.title)
+        VStack (){
+            Text("Tarjetas de crédito")
+                .font(.title).bold()
             ScrollView (.vertical){
                 
                 // Tarjeta #1 Banamex
@@ -25,27 +26,34 @@ struct ContentView: View {
                             .offset(x:-105, y: -75)
                         
                         Text("1271 7318 1929 7430")
-                            .font(.title2)
+                            .font(.title)
                             .foregroundColor(.white)
-                            .offset(x:-52, y:-40)
+                            .offset(x:-20, y:-30)
                         
                         Text("Fernando Omar Salazar Ortiz")
                             .foregroundColor(.white)
-                            .offset(x:-42)
+                            .offset(x:-42, y: 10)
                         
                         Text("Bloquear")
                             .font(.title3).bold()
                             .foregroundColor(.white)
-                            .offset(x:-70, y: 50)
+                            .offset(x:-70, y: 60)
                         
-                        Text("mastercard").bold()
+                        Text("mastercard").font(.caption).bold()
                             .foregroundColor(.white)
-                            .offset(x:110, y: 80)
+                            .offset(x:112, y: 80)
+                        
+                        Image("6bnmx").resizable().frame(width: 25, height: 25)
+                            .offset(x:-35, y: -75)
+                        
+                        Image("8less").resizable()
+                            .frame(width: 35, height: 35)
+                            .offset(x:140, y: -70)
                         
                         Image(systemName: "lock")
                             .foregroundColor(.white)
                             .font(.title3)
-                            .offset(x:-145, y: 50)
+                            .offset(x:-145, y: 60)
                         
                         Circle()
                             .fill(Color.teal)
@@ -65,11 +73,49 @@ struct ContentView: View {
                     .fill(Color.blue)
                     .frame(width: 350, height: 200)
                     .cornerRadius(20)
-                    .overlay {
+                    .overlay{
                         Text("Mercado Pago")
-                            .font(.title).bold()
+                            .font(.title2).bold()
                             .foregroundColor(.white)
-                            .offset(x:-60, y: -60)
+                            .offset(x:-85, y: -75)
+                        
+                        Text("1271 7318 1929 7430")
+                            .font(.title)
+                            .foregroundColor(.white)
+                            .offset(x:-20, y:-30)
+                        
+                        Text("Fernando Omar Salazar Ortiz")
+                            .foregroundColor(.white)
+                            .offset(x:-42, y: 10)
+                        
+                        Text("Bloquear")
+                            .font(.title3).bold()
+                            .foregroundColor(.white)
+                            .offset(x:-70, y: 60)
+                        
+                        Text("VISA")
+                            .font(.caption).bold()
+                            .foregroundColor(.white)
+                            .offset(x:142, y: 70)
+                        
+                        Image("7mp").resizable().frame(width: 35, height: 25)
+                            .offset(x:15, y: -75)
+                        
+                        Image("8less").resizable()
+                            .frame(width: 35, height: 35)
+                            .offset(x:140, y: -70)
+                        
+                        Image(systemName: "lock")
+                            .foregroundColor(.white)
+                            .font(.title3)
+                            .offset(x:-145, y: 60)
+                        
+                        Circle()
+                            .fill(Color.black)
+                            .frame(width: 30, height: 30)
+                            .offset(x:105, y: 50)
+                        
+                        
                     }
                 
                 // Tarjeta #3 Stori
@@ -77,15 +123,46 @@ struct ContentView: View {
                     .fill(Color.green)
                     .frame(width: 350, height: 190)
                     .cornerRadius(20)
-                    .overlay {
+                    .overlay{
                         Text("Stori")
-                            .font(.title).bold()
+                            .font(.title2).bold()
                             .foregroundColor(.white)
-                            .offset(x:-120, y: -60)
+                            .offset(x:-130, y: -70)
                         
-                        Image("2storiicon")
-                            .resizable()
-                            .frame(width: 50, height: 50)
+                        Text("5563 2394 6532 1028")
+                            .font(.title)
+                            .foregroundColor(.white)
+                            .offset(x:-15, y:-30)
+                        
+                        Text("Yahir Salazar Ortiz")
+                            .foregroundColor(.white)
+                            .offset(x:-85, y: 10)
+                        
+                        Text("Bloquear")
+                            .font(.title3).bold()
+                            .foregroundColor(.white)
+                            .offset(x:-70, y: 60)
+                        
+                        Text("mastercard").font(.caption).bold()
+                            .foregroundColor(.white)
+                            .offset(x:112, y: 80)
+                        
+                        Image(systemName: "lock")
+                            .foregroundColor(.white)
+                            .font(.title3)
+                            .offset(x:-145, y: 60)
+                        
+                        Circle()
+                            .fill(Color.teal)
+                            .frame(width: 30, height: 30)
+                            .offset(x:105, y: 50)
+
+                        Circle()
+                            .fill(Color.orange)
+                            .frame(width: 30, height:30)
+                            .offset(x:120, y: 50)
+                        
+                        
                     }
                 
                 // Tarjeta #4 NU
@@ -93,11 +170,47 @@ struct ContentView: View {
                     .fill(Color.purple)
                     .frame(width: 350, height: 190)
                     .cornerRadius(20)
-                    .overlay {
+                    .overlay{
                         Text("NU")
-                            .font(.title).bold()
+                            .font(.title2).bold()
                             .foregroundColor(.white)
-                            .offset(x:-135, y: -60)
+                            .offset(x:-140, y: -70)
+                        
+                        Text("5563 2394 6532 1028")
+                            .font(.title)
+                            .foregroundColor(.white)
+                            .offset(x:-15, y:-30)
+                        
+                        Text("José Iván Retta Ramírez")
+                            .foregroundColor(.white)
+                            .offset(x:-85, y: 10)
+                        
+                        Text("Bloquear")
+                            .font(.title3).bold()
+                            .foregroundColor(.white)
+                            .offset(x:-70, y: 60)
+                        
+                        Text("mastercard").font(.caption).bold()
+                            .foregroundColor(.white)
+                            .offset(x:112, y: 80)
+                        
+                        
+                        
+                        Image(systemName: "lock")
+                            .foregroundColor(.white)
+                            .font(.title3)
+                            .offset(x:-145, y: 60)
+                        
+                        Circle()
+                            .fill(Color.teal)
+                            .frame(width: 30, height: 30)
+                            .offset(x:105, y: 50)
+
+                        Circle()
+                            .fill(Color.orange)
+                            .frame(width: 30, height:30)
+                            .offset(x:120, y: 50)
+                        
                         
                     }
                 
