@@ -10,9 +10,30 @@
 		35B799BB2E78DACF00D4D089 /* PrimerParcial_YahirSalazarOrtiz.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PrimerParcial_YahirSalazarOrtiz.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		35B799D42E78DBF700D4D089 /* Exceptions for "PrimerParcial_YahirSalazarOrtiz" folder in "PrimerParcial_YahirSalazarOrtiz" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				1storilogo.png,
+				2storiicon.png,
+				3nulogo.png,
+				4nuicon.png,
+				5hey.png,
+				6bnmx.png,
+				7mp.png,
+				8cless.png,
+				8less.png,
+			);
+			target = 35B799BA2E78DACF00D4D089 /* PrimerParcial_YahirSalazarOrtiz */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		35B799BD2E78DACF00D4D089 /* PrimerParcial_YahirSalazarOrtiz */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				35B799D42E78DBF700D4D089 /* Exceptions for "PrimerParcial_YahirSalazarOrtiz" folder in "PrimerParcial_YahirSalazarOrtiz" target */,
+			);
 			path = PrimerParcial_YahirSalazarOrtiz;
 			sourceTree = "<group>";
 		};
